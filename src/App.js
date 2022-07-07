@@ -28,13 +28,15 @@ function App() {
 
 
     <div className='pt-4'>
-    <ul>
+    <ul className='list-disc pr-28 font-semibold text-lg text-zinc-800'>
     {
-      items.map(item =>(
+      items.map((todoitem,index) =>(
         <ToDoItem
-         text = {item}
-     />
-     ))}
+         key ={index}
+         id = {index}
+         text = {todoitem}
+     />)
+     )}
     
     </ul>
     

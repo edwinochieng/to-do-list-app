@@ -1,10 +1,11 @@
 import React from "react";
 
-function ToDoItem(){
-    return(
-      <div>
+function ToDoItem(props){
 
-      </div>
+    return(
+    
+      <li >{props.text}</li> 
+      
     )
 }
 export default ToDoItem;

@@ -5,13 +5,13 @@ function Input(props){
     const [input, setInput] = useState("")
 
     const handleChange = (event) =>{
-
-        setInput(event.target.value);
+        const newValue = event.target.value;
+        setInput(newValue);
     }
 
     return(
         <div>
-            <form>
+            
                 <input className="h-8 w-56 border border-cyan-300 focus:outline-none rounded-md bg-teal-100 text-neutral-900 text-center font-semibold text-lg"
                 onChange={handleChange} type = "text" value = {input}/>
                 <button
@@ -21,7 +21,7 @@ function Input(props){
                     setInput("")
                  }}
                  >Add</button>
-            </form>
+            
         </div>
     )
 }
